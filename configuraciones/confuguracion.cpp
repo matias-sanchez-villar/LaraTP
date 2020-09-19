@@ -9,10 +9,11 @@ using namespace std;
 #include "../validacion.h"
 
 void CopiaSeguridad(){
-    if(ConfirmacionConfiguracion()==false){
+    while(ConfirmacionConfiguracion()==false){
         if(continuar()==false){
             return;
         }
+        system ("cls");
     }
     ///guardamos usuarios
     int cant=TotalUsuarios();
@@ -58,10 +59,17 @@ void CopiaSeguridad(){
         return;
     }
     free(dos);
+    system ("cls");
     cout<<"-Copia de seguridad guardada-"<<endl;
 }
 
 void RestaurarCopia(){
+    while(ConfirmacionConfiguracion()==false){
+        if(continuar()==false){
+            return;
+        }
+        system ("cls");
+    }
     ///cambiamos usuario
     int cant=TotalUsuariosbkp();
     if(cant==-1){
@@ -109,5 +117,6 @@ void RestaurarCopia(){
         return;
     }
     free(dos);
+    system ("cls");
     cout<<"-Copia de seguridad guardada-"<<endl;
 }

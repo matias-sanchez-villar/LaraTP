@@ -70,7 +70,7 @@
 
 1600401377 c:\users\usuario\desktop\laratp\entrenamiento\archivosentrenamientos.h
 
-1600483267 source:c:\users\usuario\desktop\laratp\validacion.cpp
+1600484360 source:c:\users\usuario\desktop\laratp\validacion.cpp
 	<iostream>
 	<ctime>
 	<string.h>
@@ -91,7 +91,7 @@
 
 1600399176 c:\users\usuario\desktop\laratp\configuraciones\confuguracion.h
 
-1600483349 source:c:\users\usuario\desktop\laratp\configuraciones\confuguracion.cpp
+1600484486 source:c:\users\usuario\desktop\laratp\configuraciones\confuguracion.cpp
 	<iostream>
 	<cstdlib>
 	"confuguracion.h"

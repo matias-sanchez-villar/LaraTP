@@ -87,8 +87,8 @@ return false;
 bool ConfirmacionConfiguracion(){
     int Confirmar, confirmacion;
     srand(time(NULL));
-    Confirmar=(rand()%10000)+1;
-    cout<<"confirme su operacion";
+    Confirmar=(rand()%10000)+1000;
+    cout<<"Para realizar la Copia debera validar el numero ingresado"<<endl<<endl;
     cout<<"\t|"<<Confirmar<<"|\t";
     cin>>confirmacion;
     if(Confirmar==confirmacion){
