@@ -30,7 +30,7 @@
 	"reporte/reporte.h"
 	"configuraciones/confuguracion.h"
 
-1600444763 source:c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.cpp
+1600496125 source:c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.cpp
 	<iostream>
 	"entrenamiento.h"
 	"../estructura.h"
