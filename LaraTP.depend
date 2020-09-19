@@ -84,14 +84,18 @@
 
 1600398895 c:\users\usuario\desktop\laratp\reporte\reporte.h
 
-1600398902 source:c:\users\usuario\desktop\laratp\reporte\reporte.cpp
+1600486951 source:c:\users\usuario\desktop\laratp\reporte\reporte.cpp
 	<iostream>
+	<cstdlib>
 	"reporte.h"
 	"../estructura.h"
+	"ArchivosReportes.h"
+	"../entrenamiento/ArchivosEntrenamientos.h"
+	"../usuario/ArchivosUsuario.h"
 
 1600399176 c:\users\usuario\desktop\laratp\configuraciones\confuguracion.h
 
-1600484486 source:c:\users\usuario\desktop\laratp\configuraciones\confuguracion.cpp
+1600484578 source:c:\users\usuario\desktop\laratp\configuraciones\confuguracion.cpp
 	<iostream>
 	<cstdlib>
 	"confuguracion.h"
@@ -108,4 +112,13 @@
 	<cstdio>
 	"confuguracion.h"
 	"../estructura.h"
+
+1600487108 source:c:\users\usuario\desktop\laratp\reporte\archivosreportes.cpp
+	<iostream>
+	<cstdio>
+	"ArchivosReportes.h"
+	"../estructura.h"
+	"../entrenamiento/entrenamiento.h"
+
+1600486603 c:\users\usuario\desktop\laratp\reporte\archivosreportes.h
 
