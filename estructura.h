@@ -14,7 +14,6 @@ struct participante{
 };
 
 struct entrenamiento{
-    bool estado;
     int id, idUsuario, actividad;
     float calorias, tiempo;
     fecha entrenamiento;
