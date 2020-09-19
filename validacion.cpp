@@ -27,7 +27,6 @@ bool continuar(){
     do{
         cout<<endl<<"-Error de ingreso de datos-"<<endl;
         cout<<"Desea continuar (SI/NO): ";
-            ///todo: probar CIN.IGNORE
         cin.getline(opcion, 4, '\n');
         if(strcmp(opcion, "si")==0){
             return true;
@@ -80,6 +79,19 @@ bool ValidarActividadEntrenamiento(int actividad, int pos){
     participante uno;
     uno=TraerUsuario(pos);
     if(uno.apto==true){
+        return true;
+    }
+return false;
+}
+
+bool ConfirmacionConfiguracion(){
+    int Confirmar, confirmacion;
+    srand(time(NULL));
+    Confirmar=(rand()%10000)+1;
+    cout<<"confirme su operacion";
+    cout<<"\t|"<<Confirmar<<"|\t";
+    cin>>confirmacion;
+    if(Confirmar==confirmacion){
         return true;
     }
 return false;

@@ -70,7 +70,7 @@
 
 1600401377 c:\users\usuario\desktop\laratp\entrenamiento\archivosentrenamientos.h
 
-1600112138 source:c:\users\usuario\desktop\laratp\validacion.cpp
+1600483267 source:c:\users\usuario\desktop\laratp\validacion.cpp
 	<iostream>
 	<ctime>
 	<string.h>
@@ -78,7 +78,7 @@
 	"validacion.h"
 	"usuario/ArchivosUsuario.h"
 
-1600111156 c:\users\usuario\desktop\laratp\validacion.h
+1600482631 c:\users\usuario\desktop\laratp\validacion.h
 
 1600295084 c:\users\usuario\desktop\laratp\jeje\jeji.h
 
@@ -91,7 +91,7 @@
 
 1600399176 c:\users\usuario\desktop\laratp\configuraciones\confuguracion.h
 
-1600449916 source:c:\users\usuario\desktop\laratp\configuraciones\confuguracion.cpp
+1600483349 source:c:\users\usuario\desktop\laratp\configuraciones\confuguracion.cpp
 	<iostream>
 	<cstdlib>
 	"confuguracion.h"
@@ -99,6 +99,7 @@
 	"ArchivosConfiguraciones.h"
 	"../usuario/ArchivosUsuario.h"
 	"../entrenamiento/ArchivosEntrenamientos.h"
+	"../validacion.h"
 
 1600449688 c:\users\usuario\desktop\laratp\configuraciones\archivosconfiguraciones.h
 

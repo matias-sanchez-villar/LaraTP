@@ -6,8 +6,14 @@ using namespace std;
 #include "ArchivosConfiguraciones.h"
 #include "../usuario/ArchivosUsuario.h"
 #include "../entrenamiento/ArchivosEntrenamientos.h"
+#include "../validacion.h"
 
 void CopiaSeguridad(){
+    if(ConfirmacionConfiguracion()==false){
+        if(continuar()==false){
+            return;
+        }
+    }
     ///guardamos usuarios
     int cant=TotalUsuarios();
     if(cant==-1){
