@@ -5,6 +5,7 @@ using namespace std;
 #include "menu.h"
 
 int main(){
+    setlocale(LC_ALL, "Spanish");
     short opcion;
     do{
         title("MENU", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);

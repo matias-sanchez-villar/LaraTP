@@ -37,7 +37,7 @@ void NuevoEntrenamiento(){
             cin>>uno.entrenamiento.dia;
             cout<<"\tmes  : ";
             cin>>uno.entrenamiento.mes;
-            cout<<"\tanio : ";
+            cout<<"\taño : ";
             cin>>uno.entrenamiento.anio;
         }
     cout<<"Ingrese actividad: ";

@@ -2,14 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="entrenamiento\entrenamiento.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+	<File name="estructura.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4361" topLine="2" />
-		</Cursor>
-	</File>
-	<File name="configuraciones\confuguracion.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2515" topLine="111" />
+			<Cursor1 position="265" topLine="7" />
 		</Cursor>
 	</File>
 	<File name="menu.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
@@ -17,24 +12,24 @@
 			<Cursor1 position="2184" topLine="33" />
 		</Cursor>
 	</File>
-	<File name="usuario\usuario.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="6776" topLine="212" />
-		</Cursor>
-	</File>
-	<File name="estructura.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="265" topLine="7" />
-		</Cursor>
-	</File>
 	<File name="reporte\ArchivosReportes.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1057" topLine="30" />
 		</Cursor>
 	</File>
+	<File name="entrenamiento\entrenamiento.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1478" topLine="146" />
+		</Cursor>
+	</File>
 	<File name="reporte\reporte.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="844" topLine="46" />
+			<Cursor1 position="844" topLine="49" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="307" topLine="3" />
 		</Cursor>
 	</File>
 	<File name="InterfazGrafica\ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
@@ -42,9 +37,14 @@
 			<Cursor1 position="510" topLine="33" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+	<File name="configuraciones\confuguracion.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="159" topLine="7" />
+			<Cursor1 position="2515" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="usuario\usuario.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1924" topLine="212" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

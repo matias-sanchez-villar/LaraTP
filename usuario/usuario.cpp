@@ -39,7 +39,7 @@ void NuevoUsuario(){
     cin>>uno.nacimiento.dia;
     cout<<"\t mes    : ";
     cin>>uno.nacimiento.mes;
-    cout<<"\tanio (4): ";
+    cout<<"\taño (4): ";
     cin>>uno.nacimiento.anio;
         while(ValidarFecha(uno.nacimiento.dia, uno.nacimiento.mes, uno.nacimiento.anio, true)!=true){
                 if(continuar()==false){
@@ -51,7 +51,7 @@ void NuevoUsuario(){
             cin>>uno.nacimiento.dia;
             cout<<"\tmes  : ";
             cin>>uno.nacimiento.mes;
-            cout<<"\tanio : ";
+            cout<<"\taño : ";
             cin>>uno.nacimiento.anio;
         }
     cout<<"Ingrese altura: ";
