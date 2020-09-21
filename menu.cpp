@@ -2,6 +2,7 @@
 using namespace std;
 #include <stdlib.h>
 #include "menu.h"
+#include "InterfazGrafica/ui.h"
 #include "usuario/usuario.h"
 #include "entrenamiento/entrenamiento.h"
 #include "reporte/reporte.h"
@@ -10,7 +11,7 @@ using namespace std;
 void usuario(){
     short opcion;
     do{
-        cout<<"\t USUARIOS";
+        title("USUARIOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) NUEVO USUARIO";
         cout<<endl<<"2) MODIFICAR USUARIO";
@@ -25,35 +26,23 @@ void usuario(){
         switch(opcion){
         case 1:
             NuevoUsuario();
-            system ("pause");
-            system ("cls");
         break;
         case 2:
             ModificarUsuario();
-            system ("pause");
-            system ("cls");
         break;
         case 3:
             ListarUsuariosID();
-            system ("pause");
-            system ("cls");
         break;
         case 4:
             ListarTodosUsuarios();
-            system ("pause");
-            system ("cls");
         break;
         case 5:
             EliminarUsuario();
-            system ("pause");
-            system ("cls");
         break;
         case 6:
         break;
         default:
-            cout<<endl<<"\t Opcion incorrecta"<<endl<<endl;
-            system ("pause");
-            system ("cls");
+            msj("OPCION INCORRECTA", 15, 3, 1, 1);
         break;
         }
     }while (opcion!=6);
@@ -63,7 +52,7 @@ void usuario(){
 void entrenamientos(){
     short opcion;
     do{
-        cout<<"\t ENTRENAMIENTOS";
+        title("ENTRENAMIENTOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) NUEVO ENTRENAMIENTO";
         cout<<endl<<"2) MODIFICAR ENTRENAMIENTO";
@@ -78,35 +67,23 @@ void entrenamientos(){
         switch(opcion){
         case 1:
             NuevoEntrenamiento();
-            system ("pause");
-            system ("cls");
         break;
         case 2:
             ModificarEntrenamiento();
-            system ("pause");
-            system ("cls");
         break;
         case 3:
             ListarEntrenamientoID();
-            system ("pause");
-            system ("cls");
         break;
         case 4:
             ListarEntrenamientoIDusuario();
-            system ("pause");
-            system ("cls");
         break;
         case 5:
             ListarTodosEntrenamientos();
-            system ("pause");
-            system ("cls");
         break;
         case 6:
         break;
         default:
-            cout<<endl<<"\t Opcion incorrecta"<<endl<<endl;
-            system ("pause");
-            system ("cls");
+            msj("OPCION INCORRECTA", 15, 3, 1, 1);
         break;
         }
     }while (opcion!=6);
@@ -115,7 +92,7 @@ void entrenamientos(){
 void reportes(){
     short opcion;
     do{
-        cout<<"\t ENTRENAMIENTOS";
+        title("reportes", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) REPORTE 1";
         cout<<endl<<"2) REPORTE 2";
@@ -127,21 +104,15 @@ void reportes(){
         switch(opcion){
         case 1:
             reporte1();
-            system ("pause");
-            system ("cls");
         break;
         case 2:
             reporte2();
-            system ("pause");
-            system ("cls");
         break;
         case 3:
             return;
         break;
         default:
-            cout<<endl<<"\t Opcion incorrecta"<<endl<<endl;
-            system ("pause");
-            system ("cls");
+            msj("OPCION INCORRECTA", 15, 3, 1, 1);
         break;
         }
     }while (opcion!=3);
@@ -150,7 +121,7 @@ void reportes(){
 void configuracion(){
     short opcion;
     do{
-        cout<<"\t ENTRENAMIENTOS";
+        title("ENTRENAMIENTOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) REALIZAR COPIA DE SEGURIDAD";
         cout<<endl<<"2) RESTAURAR COPIA DE SEGURIDAD";
@@ -162,21 +133,15 @@ void configuracion(){
         switch(opcion){
         case 1:
             CopiaSeguridad();
-            system ("pause");
-            system ("cls");
         break;
         case 2:
             RestaurarCopia();
-            system ("pause");
-            system ("cls");
         break;
         case 3:
             return;
         break;
         default:
-            cout<<endl<<"\t Opcion incorrecta"<<endl<<endl;
-            system ("pause");
-            system ("cls");
+            msj("OPCION INCORRECTA", 15, 3, 1, 1);
         break;
         }
     }while (opcion!=3);

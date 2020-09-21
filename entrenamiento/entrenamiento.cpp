@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include "entrenamiento.h"
+#include "../InterfazGrafica/ui.h"
 #include "../estructura.h"
 #include "../validacion.h"
 #include "ArchivosEntrenamientos.h"
@@ -10,7 +11,8 @@ void NuevoEntrenamiento(){
     entrenamiento uno;
     bool estado;
     int posicion;
-    cout<<"Ingrese el ID de usuario: ";
+    title("NUEVO ENTRENAMIENTO", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+    cout<<endl<<"Ingrese el ID de usuario: ";
     cin>>uno.idUsuario;
     posicion=BuscarUsuario(uno.idUsuario, &estado);
         while (posicion==-1 || estado==false){
@@ -65,19 +67,17 @@ void NuevoEntrenamiento(){
     ///procedemos a guardar el usuario
     system ("cls");
     if(GuardarEntrenamieto(uno)==false){
-        cout<<endl<<"Error usuario no guardado"<<endl;
+        msj("ERROR ENTRENAMIENTO NO GUARDADO", 15, 3, 1, 1);
         return;
     }
-    else{
-        cout<<endl<<"Usuario guardado"<<endl;
-    }
-
+    msj("ENTRENAMIENTO GUARDADO CORRECTAMENTE", 15, 3, 1, 1);
 }
 
 void ModificarEntrenamiento(){
     entrenamiento uno;
     int pos;
-    cout<<"Ingrese el ID de entrenamiento: ";
+    title("MODIFICAR ENTRENAMIENTO", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+    cout<<endl<<"Ingrese el ID de entrenamiento: ";
     cin>>uno.id;
     pos=PosicionIDentrenamiento(uno.id);
         while(pos==-1){
@@ -109,37 +109,44 @@ void ModificarEntrenamiento(){
     ///guardar modificion
     system ("cls");
     if(ModificarEntrenamiento(uno, pos)==false){
-        cout<<endl<<"Error usuario no guardado"<<endl;
+        msj("ERROR ENTRENAMIENTO NO GUARDADO", 15, 3, 1, 1);
         return;
     }
-    else{
-        cout<<endl<<"Usuario guardado"<<endl;
-    }
+    msj("ENTRENAMIENTO GUARDADO CORRECTAMENTE", 15, 3, 1, 1);
 }
 
 void ListarEntrenamientoID(){
+    title("LISTAR ENTRENAMIENTO POR ID ENTRENAMIENTO", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
     entrenamiento uno;
-    cout<<"Ingrese el ID de entrenamiento: ";
+    cout<<endl<<"Ingrese el ID de entrenamiento: ";
     cin>>uno.id;
     if(ListarEntrenamientoID(uno.id)==false){
-        cout<<endl<<"Error usuario no guardado"<<endl;
+        msj("ERROR DE ARCHIVO  1", 15, 3, 1, 1);
     }
+    system ("pause");
+    system ("cls");
 }
 
 void ListarEntrenamientoIDusuario(){
     entrenamiento uno;
-    cout<<"Ingrese el ID de entrenamiento: ";
+    title("LISTAR ENTRENAMIENTO POR ID USUARIO", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+    cout<<endl<<"Ingrese el ID de entrenamiento: ";
     cin>>uno.id;
     if(ListarEntrenamientoIDusuario(uno.id)==false){
-        cout<<endl<<"Error usuario no guardado"<<endl;
+        msj("ERROR DE ARCHIVO 1", 15, 3, 1, 1);
     }
+    system ("pause");
+    system ("cls");
 }
 
 void ListarTodosEntrenamientos(){
+    title("LISTAR TODOS LOS ENTRENAMIENTOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);cout<<endl;
     bool correcto=ListarTodosLosEntrenamientos();
         if(correcto==false){
-            cout<<"-Error de archivos-"<<endl;
+            msj("Error de archivo 1", 15, 3, 1, 1);
         }
+    system ("pause");
+    system ("cls");
 }
 
 void MostrarEntramiento(entrenamiento uno){

@@ -101,3 +101,4 @@ int GuardarEntrenamietoBKP_en_DAt (entrenamiento *uno, int cant){
     fclose(p);
 return correcto;
 }
+

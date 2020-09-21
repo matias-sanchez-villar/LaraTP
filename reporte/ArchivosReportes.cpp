@@ -4,6 +4,7 @@ using namespace std;
 #include "ArchivosReportes.h"
 #include "../estructura.h"
 #include "../entrenamiento/entrenamiento.h"
+#include "../InterfazGrafica/ui.h"
 
 float TotalTiempo(){
     float total;
@@ -21,6 +22,7 @@ return total;
 }
 
 bool MostrarMayoresAlPromedio(float prom){
+    short cont=0;
     bool validar;
     entrenamiento uno;
     FILE *p=fopen("archivos/entrenamientos.dat","rb");
@@ -30,11 +32,15 @@ bool MostrarMayoresAlPromedio(float prom){
         }
     while(fread(&uno, sizeof(entrenamiento),1,p)){
         if(uno.tiempo>prom){
+            cont++;
             MostrarEntramiento(uno);
         }
         validar=true;
     }
     fclose(p);
+    if(cont==0){
+        msj("NINGUN USUARIO PASA EL PROMEDIO", 15, 3, 1, 1);
+    }
 return validar;
 }
 
@@ -54,3 +60,4 @@ int CantidadEntrenamientos(int id){
     fclose(p);
 return total;
 }
+

@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include "usuario.h"
+#include "../InterfazGrafica/ui.h"
 #include "../estructura.h"
 #include "ArchivosUsuario.h"
 #include "../validacion.h"
@@ -8,7 +9,8 @@ using namespace std;
 void NuevoUsuario(){
     participante uno;
     short apto;
-    cout<<"Ingrese ID: ";
+    title("NUEVO USUARIO", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+    cout<<endl<<"Ingrese ID: ";
     cin>>uno.id;
         while(validarIDusuario(uno.id)!=true){
                 if(continuar()==false){
@@ -86,11 +88,11 @@ void NuevoUsuario(){
     ///procedemos a guardar el usuario
     system ("cls");
     if(GuardarUsuario(uno)==false){
-        cout<<endl<<"Error usuario no guardado"<<endl;
+        msj("ERROR USUARIO NO GUARDADO", 15, 3, 1, 1);
         return;
     }
     else{
-        cout<<endl<<"Usuario guardado"<<endl;
+        msj("USUARIO GUARDADO CORRECTAMENTE", 15, 3, 1, 1);
     }
 }
 
@@ -99,17 +101,18 @@ void ModificarUsuario(){
     int posicion;
     bool estado=false;
     short apto;
-    cout<<"Ingrese el ID de usuario a modificar: ";
+    title("MODIFICAR USUARIO", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+    cout<<endl<<"Ingrese el ID de usuario a modificar: ";
     cin>>uno.id;
     posicion=BuscarUsuario(uno.id, &estado);
         if (posicion==-1 || estado==false){
-            cout<<"Error de archivo"<<endl;
+            msj("Error de archivo", 15, 3, 1, 1);
             return;
         }
     ///traemos el usuario
     uno=TraerUsuario(posicion);
         if(uno.id==-1){
-            cout<<"Error de Archivos"<<endl;
+            msj("Error de archivo", 15, 3, 1, 1);
             return;
         }
     ///empieza la modificacion
@@ -136,71 +139,78 @@ void ModificarUsuario(){
             cin>>apto;
         }
     uno.apto=apto;
+    system ("cls");
     ///guardamos la modificacion
     if(ModificarUsuario(uno, posicion)==false){
-        cout<<"participante no guardado";
+        msj("Error USUARIO NO GUARDADO", 15, 3, 1, 1);
         return;
     }
-    cout<<"Participante guardado";
+    msj("USUARIO GUARDADO CORRECTAMENTE", 15, 3, 1, 1);
 }
 
 void ListarUsuariosID(){
     participante uno;
     int posicion;
     bool estado=false;
-    cout<<"Ingrese el ID de usuario: ";
+    title("LISTAR USUARIO POR ID", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+    cout<<endl<<"Ingrese el ID de usuario: ";
     cin>>uno.id;
     posicion=BuscarUsuario(uno.id, &estado);
         if (posicion==-1 || estado==false){
-            cout<<"Error de archivo"<<endl;
+            msj("Error de archivo 1", 15, 3, 1, 1);
             return;
         }
     ///traemos el usuario
     uno=TraerUsuario(posicion);
         if(uno.id==-1){
-            cout<<"Error de Archivos"<<endl;
+            msj("ERROR DE ARCHIVO 2", 15, 3, 1, 1);
             return;
         }
     ///mostrar usuario
     MostrarUsuario(uno);
+    system ("pause");
+    system ("cls");
 }
 
 void ListarTodosUsuarios(){
+    title("LISTAR TODOS LOS USUARIO", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+    cout<<endl;
     if(ListarTodosLosUsuarios()==false){
-        cout<<endl<<"-Error de archivos-"<<endl;
+        msj("ERROR DE ARCHIVO 1", 15, 3, 1, 1);
     }
     else{
         cout<<endl<<"-Todos los usuarios han sido mostrados-"<<endl;
     }
+    system ("pause");
+    system ("cls");
 }
 
 void EliminarUsuario(){
     participante uno;
     int posicion;
     bool estado=false;
-    cout<<"Ingrese el ID de usuario: ";
+    title("ELIMINAR USUARIO", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+    cout<<endl<<"Ingrese el ID de usuario: ";
     cin>>uno.id;
     posicion=BuscarUsuario(uno.id, &estado);
         if (posicion==-1 || estado==false){
-            cout<<"Error de archivo"<<endl;
+            msj("USUARIO INEXISTENTE", 15, 3, 1, 1);
             return;
         }
     ///traemos el participante
     uno=TraerUsuario(posicion);
         if(uno.id==-1){
-            cout<<"Error de Archivos"<<endl;
+            msj("ERROR DE ARCHIVO 2", 15, 3, 1, 1);
             return;
         }
     uno.estado=false;
     ///procedemos a guardar el usuario
     system ("cls");
     if(ModificarUsuario(uno, posicion)==false){
-        cout<<"Error usuario no guardado"<<endl;
+        msj("Error USUARIO NO GUARDADO", 15, 3, 1, 1);
         return;
     }
-    else{
-        cout<<endl<<"Usuario guardado"<<endl;
-    }
+    msj("USUARIO ELIMINADO CORRECTAMENTE", 15, 3, 1, 1);
 }
 
 void MostrarUsuario(participante uno){

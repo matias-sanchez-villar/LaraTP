@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="InterfazGrafica/ui.cpp" />
+		<Unit filename="InterfazGrafica/ui.h" />
 		<Unit filename="configuraciones/ArchivosConfiguraciones.cpp" />
 		<Unit filename="configuraciones/ArchivosConfiguraciones.h" />
 		<Unit filename="configuraciones/confuguracion.cpp" />

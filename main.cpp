@@ -1,17 +1,15 @@
 #include <iostream>
 using namespace std;
 #include <stdlib.h>
-#include "rlutil.h"
-using namespace rlutil;
+#include "InterfazGrafica/ui.h"
 #include "menu.h"
 
 int main(){
-    setBackgroundColor(LIGHTMAGENTA);
-    setColor(WHITE);
-    system ("cls");
     short opcion;
     do{
-        cout<<"\t MENU";
+        title("MENU", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        system("cls");
+        title("MENU", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1_ USUARIOS";
         cout<<endl<<"2_ ENTRENAMIENTOS";
@@ -41,9 +39,7 @@ int main(){
             system ("cls");
         break;
         default:
-            cout<<endl<<"\t Opcion incorrecta"<<endl<<endl;
-            system ("pause");
-            system ("cls");
+            msj("OPCION INCORRECTA", 15, 3, 1, 1);
         break;
         }
     }while (opcion!=5);
