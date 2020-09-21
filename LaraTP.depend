@@ -204,7 +204,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1600561132 source:c:\users\usuario\desktop\laratp\menu.cpp
+1600718778 source:c:\users\usuario\desktop\laratp\menu.cpp
 	<iostream>
 	<stdlib.h>
 	"menu.h"
@@ -263,7 +263,7 @@
 	"validacion.h"
 	"usuario/ArchivosUsuario.h"
 
-1600703515 source:c:\users\usuario\desktop\laratp\main.cpp
+1600718660 source:c:\users\usuario\desktop\laratp\main.cpp
 	<iostream>
 	<stdlib.h>
 	"InterfazGrafica/ui.h"

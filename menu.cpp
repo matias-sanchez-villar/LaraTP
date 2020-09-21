@@ -11,16 +11,16 @@ using namespace std;
 void usuario(){
     short opcion;
     do{
-        title("USUARIOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENÚ USUARIOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) NUEVO USUARIO";
         cout<<endl<<"2) MODIFICAR USUARIO";
         cout<<endl<<"3) LISTAR USUARIO POR ID";
         cout<<endl<<"4) LISTAR TODOS LOS USUARIOS";
         cout<<endl<<"5) ELIMINAR USUARIO";
-        cout<<endl<<"6) SALIR";
+        cout<<endl<<"6) VOLVER AL MENÚ PRINCIPAL";
         cout<<endl<<"---------------------------";
-        cout<<endl<<"\t opcion: ";
+        cout<<endl<<"\t OPCIÓN: ";
         cin>>opcion;
         system ("cls");
         switch(opcion){
@@ -42,7 +42,7 @@ void usuario(){
         case 6:
         break;
         default:
-            msj("OPCION INCORRECTA", 15, 3, 1, 1);
+            msj("OPCIÓN INCORRECTA", 15, 3, 1, 1);
         break;
         }
     }while (opcion!=6);
@@ -52,16 +52,16 @@ void usuario(){
 void entrenamientos(){
     short opcion;
     do{
-        title("ENTRENAMIENTOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENÚ ENTRENAMIENTOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) NUEVO ENTRENAMIENTO";
         cout<<endl<<"2) MODIFICAR ENTRENAMIENTO";
         cout<<endl<<"3) LISTAR ENTRENAMIENTO POR ID";
         cout<<endl<<"4) LISTAR ENTRENAMIENTOS POR ID USUARIO";
         cout<<endl<<"5) LISTAR TODOS LOS ENTRENAMIENTOS";
-        cout<<endl<<"6) SALIR";
+        cout<<endl<<"6) VOLVER AL MENÚ PRINCIPAL";
         cout<<endl<<"---------------------------";
-        cout<<endl<<"\t opcion: ";
+        cout<<endl<<"\t OPCIÓN: ";
         cin>>opcion;
         system ("cls");
         switch(opcion){
@@ -83,7 +83,7 @@ void entrenamientos(){
         case 6:
         break;
         default:
-            msj("OPCION INCORRECTA", 15, 3, 1, 1);
+            msj("OPCIÓN INCORRECTA", 15, 3, 1, 1);
         break;
         }
     }while (opcion!=6);
@@ -92,13 +92,13 @@ void entrenamientos(){
 void reportes(){
     short opcion;
     do{
-        title("reportes", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENÚ REPORTE", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) REPORTE 1";
         cout<<endl<<"2) REPORTE 2";
-        cout<<endl<<"3) SALIR";
+        cout<<endl<<"3) VOLVER AL MENÚ PRINCIPAL";
         cout<<endl<<"---------------------------";
-        cout<<endl<<"\t opcion: ";
+        cout<<endl<<"\t OPCIÓN: ";
         cin>>opcion;
         system ("cls");
         switch(opcion){
@@ -112,7 +112,7 @@ void reportes(){
             return;
         break;
         default:
-            msj("OPCION INCORRECTA", 15, 3, 1, 1);
+            msj("OPCIÓN INCORRECTA", 15, 3, 1, 1);
         break;
         }
     }while (opcion!=3);
@@ -121,13 +121,13 @@ void reportes(){
 void configuracion(){
     short opcion;
     do{
-        title("ENTRENAMIENTOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENÚ CONFIGURACIÓN", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) REALIZAR COPIA DE SEGURIDAD";
         cout<<endl<<"2) RESTAURAR COPIA DE SEGURIDAD";
-        cout<<endl<<"3) SALIR";
+        cout<<endl<<"3) VOLVER AL MENÚ PRINCIPAL";
         cout<<endl<<"---------------------------";
-        cout<<endl<<"\t opcion: ";
+        cout<<endl<<"\t OPCIÓN: ";
         cin>>opcion;
         system ("cls");
         switch(opcion){
@@ -141,7 +141,7 @@ void configuracion(){
             return;
         break;
         default:
-            msj("OPCION INCORRECTA", 15, 3, 1, 1);
+            msj("OPCIÓN INCORRECTA", 15, 3, 1, 1);
         break;
         }
     }while (opcion!=3);

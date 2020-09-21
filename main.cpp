@@ -8,17 +8,17 @@ int main(){
     setlocale(LC_ALL, "Spanish");
     short opcion;
     do{
-        title("MENU", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENÚ", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         system("cls");
-        title("MENU", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENÚ", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1_ USUARIOS";
         cout<<endl<<"2_ ENTRENAMIENTOS";
         cout<<endl<<"3_ REPORTES";
-        cout<<endl<<"4_ CONFIGURACION";
+        cout<<endl<<"4_ CONFIGURACIÓN";
         cout<<endl<<"5_ SALIR";
         cout<<endl<<"---------------------------";
-        cout<<endl<<"\t OPCION: ";
+        cout<<endl<<"\t OPCIÓN: ";
         cin>>opcion;
         system ("cls");
         switch(opcion){
@@ -35,12 +35,12 @@ int main(){
             configuracion();
         break;
         case 5:
-            cout<<endl<<"\t Gracias Hasta luego"<<endl<<endl;
+            cout<<endl<<"\t GRACIAS HASTA LUEGO"<<endl<<endl;
             system ("pause");
             system ("cls");
         break;
         default:
-            msj("OPCION INCORRECTA", 15, 3, 1, 1);
+            msj("OPCIÓN INCORRECTA", 15, 3, 1, 1);
         break;
         }
     }while (opcion!=5);
