@@ -15,12 +15,13 @@ return BuscarUsuario(id);
 
 bool continuar(){
     char opcion[3]={};
+    cin.ignore();
     cin.getline(opcion, 4, '\n');
-    if(strcmp(opcion, "si")==0){
+    if((strcmp(opcion, "si") && strcmp(opcion, "SI") && strcmp(opcion, "Si") && strcmp(opcion, "sI")) ==0){
         return true;
     }
     else{
-        if(strcmp(opcion, "no")==0){
+        if((strcmp(opcion, "no") && strcmp(opcion, "NO") && strcmp(opcion, "No") && strcmp(opcion, "nO"))==0){
             return false;
         }
     }
@@ -28,11 +29,11 @@ bool continuar(){
         cout<<endl<<"-Error de ingreso de datos-"<<endl;
         cout<<"Desea continuar (SI/NO): ";
         cin.getline(opcion, 4, '\n');
-        if(strcmp(opcion, "si")==0){
+        if((strcmp(opcion, "si") && strcmp(opcion, "SI") && strcmp(opcion, "Si") && strcmp(opcion, "sI"))==0){
             return true;
         }
         else{
-            if(strcmp(opcion, "no")==0){
+            if((strcmp(opcion, "no") && strcmp(opcion, "NO") && strcmp(opcion, "No") && strcmp(opcion, "nO"))==0){
                 return false;
             }
         }

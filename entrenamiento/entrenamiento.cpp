@@ -16,7 +16,9 @@ void NuevoEntrenamiento(){
     cin>>uno.idUsuario;
     posicion=BuscarUsuario(uno.idUsuario, &estado);
         while (posicion==-1 || estado==false){
+                cout<<"Error ID, Desea continuar (SI/NO): ";
                 if(continuar()==false){
+                    system ("cls");
                     return;
                 }
             cout<<endl<<">> Ingrese el ID de usuario: ";
@@ -44,6 +46,7 @@ void NuevoEntrenamiento(){
     cin>>uno.actividad;
         while(ValidarActividadEntrenamiento(uno.actividad, posicion)!=true){
                 if(continuar()==false){
+                    system ("cls");
                     return;
                 }
             cout<<">> Ingrese el actividad: ";
@@ -64,6 +67,14 @@ void NuevoEntrenamiento(){
             cin>>uno.tiempo;
         }
     uno.id=IDautomatico();
+    ///preguntamos
+    cout<<"Desea Guardar el Entrenamiento (SI/NO): ";
+        if(continuar()==false){
+            cout<<"El Entrenamiento no ha sido guardado"<<endl;
+            system ("pause");
+            system ("cls");
+            return;
+        }
     ///procedemos a guardar el usuario
     system ("cls");
     if(GuardarEntrenamieto(uno)==false){
@@ -81,7 +92,9 @@ void ModificarEntrenamiento(){
     cin>>uno.id;
     pos=PosicionIDentrenamiento(uno.id);
         while(pos==-1){
+                cout<<"Error ID, Desea continuar (SI/NO): ";
                 if(continuar()==false){
+                    system ("cls");
                     return;
                 }
             cout<<"Ingrese el ID de entrenamiento: ";
@@ -105,6 +118,14 @@ void ModificarEntrenamiento(){
             cout<<endl<<"tiempo incorrecta, reingrese el tiempo"<<endl<<endl;
             cout<<">> Ingrese el tiempo: ";
             cin>>uno.tiempo;
+        }
+    ///preguntamos
+    cout<<"Desea Guardar la Modificación del Entrenamiento (SI/NO): ";
+        if(continuar()==false){
+            cout<<"El Entrenamiento no ha sido Modificado"<<endl;
+            system ("pause");
+            system ("cls");
+            return;
         }
     ///guardar modificion
     system ("cls");

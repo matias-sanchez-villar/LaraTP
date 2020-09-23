@@ -175,7 +175,7 @@
 
 1600543628 c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.h
 
-1600703639 source:c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.cpp
+1600832875 source:c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.cpp
 	<iostream>
 	"entrenamiento.h"
 	"../InterfazGrafica/ui.h"
@@ -247,7 +247,7 @@
 	"../estructura.h"
 	"usuario.h"
 
-1600703553 source:c:\users\usuario\desktop\laratp\usuario\usuario.cpp
+1600833029 source:c:\users\usuario\desktop\laratp\usuario\usuario.cpp
 	<iostream>
 	"usuario.h"
 	"../InterfazGrafica/ui.h"
@@ -255,7 +255,7 @@
 	"ArchivosUsuario.h"
 	"../validacion.h"
 
-1600543306 source:c:\users\usuario\desktop\laratp\validacion.cpp
+1600831774 source:c:\users\usuario\desktop\laratp\validacion.cpp
 	<iostream>
 	<ctime>
 	<string.h>

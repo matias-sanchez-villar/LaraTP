@@ -13,7 +13,9 @@ void NuevoUsuario(){
     cout<<endl<<"Ingrese ID: ";
     cin>>uno.id;
         while(validarIDusuario(uno.id)!=true){
+                cout<<"Error ID, Desea continuar (SI/NO): ";
                 if(continuar()==false){
+                    system ("cls");
                     return;
                 }
             cout<<">>reingrese Ingrese el ID: ";
@@ -42,8 +44,10 @@ void NuevoUsuario(){
     cout<<"\taño (4): ";
     cin>>uno.nacimiento.anio;
         while(ValidarFecha(uno.nacimiento.dia, uno.nacimiento.mes, uno.nacimiento.anio, true)!=true){
+                cout<<"Error de Fecha, Desea continuar (SI/NO): ";
                 if(continuar()==false){
-                        return;
+                    system ("cls");
+                    return;
                 }
             cout<<endl<<"Fecha incorrecta, reingrese el fecha"<<endl<<endl;
             cout<<">> Ingrese el fecha: "<<endl;
@@ -85,6 +89,14 @@ void NuevoUsuario(){
         }
     uno.apto=apto;
     uno.estado=true;
+    ///preguntamos
+    cout<<"Desea Guardar el Usuario (SI/NO): ";
+        if(continuar()==false){
+            cout<<"El Usuario no ha sido guardado"<<endl;
+            system ("pause");
+            system ("cls");
+            return;
+        }
     ///procedemos a guardar el usuario
     system ("cls");
     if(GuardarUsuario(uno)==false){
@@ -106,13 +118,13 @@ void ModificarUsuario(){
     cin>>uno.id;
     posicion=BuscarUsuario(uno.id, &estado);
         if (posicion==-1 || estado==false){
-            msj("Error de archivo", 15, 3, 1, 1);
+            msj("Error de archivo 1", 15, 3, 1, 1);
             return;
         }
     ///traemos el usuario
     uno=TraerUsuario(posicion);
         if(uno.id==-1){
-            msj("Error de archivo", 15, 3, 1, 1);
+            msj("Error de archivo 2", 15, 3, 1, 1);
             return;
         }
     ///empieza la modificacion
@@ -140,6 +152,14 @@ void ModificarUsuario(){
         }
     uno.apto=apto;
     system ("cls");
+    ///preguntamos
+    cout<<"Desea Guardar la Modificación del Usuario (SI/NO): ";
+        if(continuar()==false){
+            cout<<"El Usuario no ha sido modificado"<<endl;
+            system ("pause");
+            system ("cls");
+            return;
+        }
     ///guardamos la modificacion
     if(ModificarUsuario(uno, posicion)==false){
         msj("Error USUARIO NO GUARDADO", 15, 3, 1, 1);
@@ -204,6 +224,14 @@ void EliminarUsuario(){
             return;
         }
     uno.estado=false;
+    ///preguntamos
+    cout<<"Desea Eliminar el Usuario (SI/NO): ";
+        if(continuar()==false){
+            cout<<"El Usuario no ha sido eliminado"<<endl;
+            system ("pause");
+            system ("cls");
+            return;
+        }
     ///procedemos a guardar el usuario
     system ("cls");
     if(ModificarUsuario(uno, posicion)==false){
