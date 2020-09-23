@@ -1,4 +1,4 @@
-#Trabajo Practico Brian Lara
+#Trabajo Practico  Brian Lara
 
 Desarrollo de una aplicación seguimiento de actividad física.
 •	Estructuras
