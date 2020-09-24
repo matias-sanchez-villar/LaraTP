@@ -1,5 +1,7 @@
 #include <iostream>
 using namespace std;
+#include <cstdlib>
+#include <cstdio>
 #include <cstring>
 #include "ui.h"
 #include "rlutil.h"

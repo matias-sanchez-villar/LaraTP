@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
+#include <cstdlib>
 #include <cstdio>
+#include <cstring>
 #include "ArchivosEntrenamientos.h"
 #include "../estructura.h"
 #include "entrenamiento.h"

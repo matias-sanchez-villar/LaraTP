@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
 #include <ctime>
 #include <string.h>
 #include "estructura.h"

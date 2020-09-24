@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 #include <cstdio>
+#include <cstdlib>
+#include <cstring>
 #include "confuguracion.h"
 #include "../estructura.h"
 
