@@ -147,7 +147,6 @@ void ListarEntrenamientoID(){
     if(ListarEntrenamientoID(uno.id)==false){
         msj("ERROR DE ARCHIVO  1", 15, 3, 1, 1);
     }
-    system ("pause");
     system ("cls");
 }
 
@@ -159,7 +158,6 @@ void ListarEntrenamientoIDusuario(){
     if(ListarEntrenamientoIDusuario(uno.id)==false){
         msj("ERROR DE ARCHIVO 1", 15, 3, 1, 1);
     }
-    system ("pause");
     system ("cls");
 }
 

@@ -181,7 +181,7 @@
 
 1600543628 c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.h
 
-1600985077 source:c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.cpp
+1600986036 source:c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -289,7 +289,7 @@
 	"validacion.h"
 	"usuario/ArchivosUsuario.h"
 
-1600984975 source:c:\users\usuario\desktop\laratp\main.cpp
+1600985598 source:c:\users\usuario\desktop\laratp\main.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
