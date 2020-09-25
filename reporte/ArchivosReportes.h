@@ -1,8 +1,8 @@
 #ifndef ARCHIVOSREPORTES_H_INCLUDED
 #define ARCHIVOSREPORTES_H_INCLUDED
 
-float TotalTiempo();
-bool MostrarMayoresAlPromedio(float);
-int CantidadEntrenamientos(int);
+struct fecha MayorCantidadCalorias(int, float *);
+int CantidadEntrenamientos(int );
+void MostrarPerfilUsuario(int);
 
 #endif // ARCHIVOSREPORTES_H_INCLUDED

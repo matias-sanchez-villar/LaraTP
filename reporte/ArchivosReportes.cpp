@@ -7,9 +7,34 @@ using namespace std;
 #include "../estructura.h"
 #include "../entrenamiento/entrenamiento.h"
 #include "../InterfazGrafica/ui.h"
+#include "../usuario/ArchivosUsuario.h"
+#include "../entrenamiento/ArchivosEntrenamientos.h"
 
-float TotalTiempo(){
-    float total;
+struct fecha MayorCantidadCalorias(int id, float *calorias){
+    entrenamiento uno;
+    fecha dos;
+    FILE *p=fopen("archivos/entrenamientos.dat","rb");
+        if(p==NULL){
+            dos.dia=-1;
+            fclose(p);
+            return dos;
+        }
+    while(fread(&uno, sizeof(entrenamiento),1,p)){
+        if (id==uno.idUsuario){
+            if(*calorias==0 || *calorias<uno.calorias){
+                *calorias=uno.calorias;
+                dos.dia=uno.entrenamiento.dia;
+                dos.mes=uno.entrenamiento.mes;
+                dos.anio=uno.entrenamiento.anio;
+            }
+        }
+    }
+    fclose(p);
+return dos;
+}
+
+int CantidadEntrenamientos(int x){
+    int cantidad=0;
     entrenamiento uno;
     FILE *p=fopen("archivos/entrenamientos.dat","rb");
         if(p==NULL){
@@ -17,49 +42,25 @@ float TotalTiempo(){
             return -1;
         }
     while(fread(&uno, sizeof(entrenamiento),1,p)){
-        total+=uno.tiempo;
+        if(x==uno.actividad){
+            cantidad++;
+        }
     }
     fclose(p);
-return total;
+return cantidad;
 }
 
-bool MostrarMayoresAlPromedio(float prom){
-    short cont=0;
-    bool validar;
+void MostrarPerfilUsuario(int x){
     entrenamiento uno;
     FILE *p=fopen("archivos/entrenamientos.dat","rb");
         if(p==NULL){
             fclose(p);
-            return false;
+            return;
         }
     while(fread(&uno, sizeof(entrenamiento),1,p)){
-        if(uno.tiempo>prom){
-            cont++;
-            MostrarEntramiento(uno);
-        }
-        validar=true;
-    }
-    fclose(p);
-    if(cont==0){
-        msj("NINGUN USUARIO PASA EL PROMEDIO", 15, 3, 1, 1);
-    }
-return validar;
-}
-
-int CantidadEntrenamientos(int id){
-    int total=0;
-    entrenamiento uno;
-    FILE *p=fopen("archivos/entrenamientos.dat","rb");
-        if(p==NULL){
-            fclose(p);
-            return -1;
-        }
-    while(fread(&uno, sizeof(entrenamiento),1,p)){
-        if(uno.idUsuario==id && uno.entrenamiento.anio==2020){
-            total++;
+        if(uno.actividad==x){
+        MostarUsuario(uno.idUsuario);
         }
     }
     fclose(p);
-return total;
 }
-

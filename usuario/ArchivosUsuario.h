@@ -8,5 +8,6 @@ bool ModificarUsuario(struct participante, int);
 bool ListarTodosLosUsuarios();
 struct participante TraerUsuario(int);
 int TotalUsuarios();
+void MostarUsuario(int);
 
 #endif // ARCHIVOSUSUARIO_H_INCLUDED

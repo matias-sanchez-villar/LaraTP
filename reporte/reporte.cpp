@@ -9,57 +9,50 @@ using namespace std;
 #include "ArchivosReportes.h"
 #include "../entrenamiento/ArchivosEntrenamientos.h"
 #include "../usuario/ArchivosUsuario.h"
+#include "../validacion.h"
 
-///Listar todos los entrenamientos cuyo tiempo supere el tiempo promedio.
+///A partir de un IDUsuario que se ingresa por teclado, listar el entrenamiento
+///de mayor cantidad de calorías y la fecha en que las registró. Si hay dos
+///registro con misma cantidad, mostrar el primero de ellos.
 
 void reporte1(){
     title("REPORTE 1", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);cout<<endl;
-    int cant=TotalEntremanitos();
-        if(cant==-1){
-            msj("ERROR DE ARCHIVO 1", 15, 3, 1, 1);
-            return;
+    int id;
+    cout<<endl<<"Ingrese ID: ";
+    cin>>id;
+        while(validarIDusuario(id)==true){
+                cout<<"Error ID, Desea continuar (SI/NO): ";
+                if(continuar()==false){
+                    system ("cls");
+                    return;
+                }
+            cout<<">>reingrese Ingrese el ID: ";
+            cin>>id;
         }
-    float tiempo=TotalTiempo(), total;
-        if(tiempo==-1){
-            msj("ERROR DE ARCHIVO 2", 15, 3, 1, 1);
-            return;
-        }
-    total=tiempo/cant;
-    if(MostrarMayoresAlPromedio(total)==false){
-        msj("ERROR DE ARCHIVO 3", 15, 3, 1, 1);
-        return;
-    }
+    fecha uno;
+    float calorias=0;
+    uno=MayorCantidadCalorias(id, &calorias);
+    ///mostramos
+    cout<<"Numero de ID: "<<id<<endl;
+    cout<<"Numero de calorias: "<<calorias<<endl;
+    cout<<"Fecha de nacimiento "<<uno.dia<<"/"<<uno.mes<<"/"<<uno.anio<<endl;
     system ("pause");
     system ("cls");
 }
 
-/// A partir de un ID de usuario que se ingrese por teclado listar Apellido,
-/// Nombres y cantidad de entrenamientos realizados en el año 2020.
+///Por cada tipo de actividad, listar la cantidad de entrenamientos
+///discriminado por perfil de usuario.
 
 void reporte2(){
     title("REPORTE 2", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);cout<<endl;
-    int cant=TotalUsuarios();
-    if(cant==-1){
-        msj("ERROR DE ARCHIVO 1", 15, 3, 1, 1);
-        return;
+    for(int x=1;x<=5;x++){
+        cout<<"Entrenamiento: "<<x<<endl;
+        cout<<"Cantidad de entrenamientos: "<<CantidadEntrenamientos(x)<<endl<<endl;
+        MostrarPerfilUsuario(x);
     }
-    participante *uno;
-    uno=(participante *)malloc(cant * sizeof(participante));
-    if(uno==NULL){
-        msj("ERROR DE ARCHIVO 2", 15, 3, 1, 1);
-        free(uno);
-        return;
-    }
-    for(int x=0;x<cant;x++){
-        uno[x]=TraerUsuario(x);
-    }
-    for(int x=0;x<cant;x++){
-        if(uno[x].estado==true){
-            cout<<"Nombre "<<uno[x].nombre<<endl;
-            cout<<"Apelldio "<<uno[x].apellido<<endl;
-            cout<<"Cantidad de entrenamientos en el 2020: "<<CantidadEntrenamientos(uno[x].id)<<endl<<endl;
-        }
-    }
+    system ("pause");
+    system ("cls");
+    cout<<"Todas las actividades fueron mostradas";
     system ("pause");
     system ("cls");
 }

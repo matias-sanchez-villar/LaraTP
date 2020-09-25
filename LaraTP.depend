@@ -163,7 +163,7 @@
 
 1600544199 c:\users\usuario\desktop\laratp\configuraciones\archivosconfiguraciones.h
 
-1600543474 c:\users\usuario\desktop\laratp\usuario\archivosusuario.h
+1600992107 c:\users\usuario\desktop\laratp\usuario\archivosusuario.h
 
 1600543673 c:\users\usuario\desktop\laratp\entrenamiento\archivosentrenamientos.h
 
@@ -181,7 +181,7 @@
 
 1600543628 c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.h
 
-1600986036 source:c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.cpp
+1600990196 source:c:\users\usuario\desktop\laratp\entrenamiento\entrenamiento.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -234,7 +234,7 @@
 
 1600543832 c:\users\usuario\desktop\laratp\reporte\reporte.h
 
-1600985009 source:c:\users\usuario\desktop\laratp\reporte\archivosreportes.cpp
+1600993675 source:c:\users\usuario\desktop\laratp\reporte\archivosreportes.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -243,10 +243,12 @@
 	"../estructura.h"
 	"../entrenamiento/entrenamiento.h"
 	"../InterfazGrafica/ui.h"
+	"../usuario/ArchivosUsuario.h"
+	"../entrenamiento/ArchivosEntrenamientos.h"
 
-1600543869 c:\users\usuario\desktop\laratp\reporte\archivosreportes.h
+1600993079 c:\users\usuario\desktop\laratp\reporte\archivosreportes.h
 
-1600985020 source:c:\users\usuario\desktop\laratp\reporte\reporte.cpp
+1600993102 source:c:\users\usuario\desktop\laratp\reporte\reporte.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -257,8 +259,9 @@
 	"ArchivosReportes.h"
 	"../entrenamiento/ArchivosEntrenamientos.h"
 	"../usuario/ArchivosUsuario.h"
+	"../validacion.h"
 
-1600985034 source:c:\users\usuario\desktop\laratp\usuario\archivosusuario.cpp
+1600992306 source:c:\users\usuario\desktop\laratp\usuario\archivosusuario.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -289,7 +292,7 @@
 	"validacion.h"
 	"usuario/ArchivosUsuario.h"
 
-1600985598 source:c:\users\usuario\desktop\laratp\main.cpp
+1600986773 source:c:\users\usuario\desktop\laratp\main.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>

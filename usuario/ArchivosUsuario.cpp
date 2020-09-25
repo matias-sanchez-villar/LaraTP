@@ -116,3 +116,19 @@ int TotalUsuarios(){
 return total;
 }
 
+void MostarUsuario(int id){
+    participante uno;
+    int pos=0;
+    FILE *p=fopen("archivos/usuarios.dat","rb");
+        if(p==NULL){
+            fclose(p);
+            return;
+        }
+    while(fread(&uno, sizeof(participante),1,p)){
+        if(uno.id==id){
+            MostrarUsuario(uno);
+        }
+        pos++;
+    }
+    fclose(p);
+}
