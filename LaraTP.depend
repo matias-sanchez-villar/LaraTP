@@ -301,3 +301,170 @@
 	"InterfazGrafica/ui.h"
 	"menu.h"
 
+1600985104 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\configuraciones\archivosconfiguraciones.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	"confuguracion.h"
+	"../estructura.h"
+
+1600544018 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\configuraciones\confuguracion.h
+
+1600571627 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\estructura.h
+
+1600985094 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\configuraciones\confuguracion.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"confuguracion.h"
+	"../InterfazGrafica/ui.h"
+	"../estructura.h"
+	"ArchivosConfiguraciones.h"
+	"../usuario/ArchivosUsuario.h"
+	"../entrenamiento/ArchivosEntrenamientos.h"
+	"../validacion.h"
+
+1600544488 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\interfazgrafica\ui.h
+
+1600544199 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\configuraciones\archivosconfiguraciones.h
+
+1606276768 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\usuario\archivosusuario.h
+
+1600543673 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\entrenamiento\archivosentrenamientos.h
+
+1600543276 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\validacion.h
+
+1600985071 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\entrenamiento\archivosentrenamientos.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"ArchivosEntrenamientos.h"
+	"../estructura.h"
+	"entrenamiento.h"
+	"../usuario/ArchivosUsuario.h"
+
+1600543628 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\entrenamiento\entrenamiento.h
+
+1600990196 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\entrenamiento\entrenamiento.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"entrenamiento.h"
+	"../InterfazGrafica/ui.h"
+	"../estructura.h"
+	"../validacion.h"
+	"ArchivosEntrenamientos.h"
+	"../usuario/ArchivosUsuario.h"
+
+1600985052 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\interfazgrafica\ui.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1593548419 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\interfazgrafica\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1600986773 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<stdlib.h>
+	"InterfazGrafica/ui.h"
+	"menu.h"
+
+1600543220 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\menu.h
+
+1600984970 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\menu.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<stdlib.h>
+	"menu.h"
+	"InterfazGrafica/ui.h"
+	"usuario/usuario.h"
+	"entrenamiento/entrenamiento.h"
+	"reporte/reporte.h"
+	"configuraciones/confuguracion.h"
+
+1600543417 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\usuario\usuario.h
+
+1600543832 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\reporte\reporte.h
+
+1606276651 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\reporte\archivosreportes.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"ArchivosReportes.h"
+	"../estructura.h"
+	"../entrenamiento/entrenamiento.h"
+	"../InterfazGrafica/ui.h"
+	"../usuario/ArchivosUsuario.h"
+	"../entrenamiento/ArchivosEntrenamientos.h"
+
+1606276651 c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\reporte\archivosreportes.h
+
+1606276651 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\reporte\reporte.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"reporte.h"
+	"../InterfazGrafica/ui.h"
+	"../estructura.h"
+	"ArchivosReportes.h"
+	"../entrenamiento/ArchivosEntrenamientos.h"
+	"../usuario/ArchivosUsuario.h"
+	"../validacion.h"
+
+1606276699 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\usuario\archivosusuario.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"ArchivosUsuario.h"
+	"../estructura.h"
+	"usuario.h"
+
+1600984988 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\usuario\usuario.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"usuario.h"
+	"../InterfazGrafica/ui.h"
+	"../estructura.h"
+	"ArchivosUsuario.h"
+	"../validacion.h"
+
+1600984956 source:c:\users\usuario\documents\utn\segundo cuatrimestre\laboratorio 2\tp1_lara\laratp\validacion.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<ctime>
+	<string.h>
+	"estructura.h"
+	"validacion.h"
+	"usuario/ArchivosUsuario.h"
+
