@@ -150,3 +150,154 @@
 	"../entrenamientos/entrenamiento.h"
 	"../usuarios/usuario.h"
 
+1606891783 source:c:\users\usuario\desktop\laratp\configuraciones\archivosconfiguracion.cpp
+	<iostream>
+	"ArchivosConfiguracion.h"
+	"configuracion.h"
+	"../estructura.h"
+
+1606891608 c:\users\usuario\desktop\laratp\configuraciones\archivosconfiguracion.h
+
+1606420431 c:\users\usuario\desktop\laratp\configuraciones\configuracion.h
+
+1606427150 c:\users\usuario\desktop\laratp\estructura.h
+
+1606967300 source:c:\users\usuario\desktop\laratp\configuraciones\configuracion.cpp
+	<iostream>
+	<cstdio>
+	"configuracion.h"
+	"ArchivosConfiguracion.h"
+	"../estructura.h"
+	"../usuarios/ArchivosUsuarios.h"
+	"../entrenamientos/ArchivosEntrenamiento.h"
+	"../validaciones.h"
+	"../InterfazGrafica/ui.h"
+
+1606884487 c:\users\usuario\desktop\laratp\usuarios\archivosusuarios.h
+
+1606887363 c:\users\usuario\desktop\laratp\entrenamientos\archivosentrenamiento.h
+
+1606947812 c:\users\usuario\desktop\laratp\validaciones.h
+
+1606971705 c:\users\usuario\desktop\laratp\interfazgrafica\ui.h
+
+1606881130 source:c:\users\usuario\desktop\laratp\entrenamientos\archivosentrenamiento.cpp
+	<iostream>
+	"ArchivosEntrenamiento.h"
+	"../estructura.h"
+	"entrenamiento.h"
+	"../usuarios/ArchivosUsuarios.h"
+
+1606420383 c:\users\usuario\desktop\laratp\entrenamientos\entrenamiento.h
+
+1606967961 source:c:\users\usuario\desktop\laratp\entrenamientos\entrenamiento.cpp
+	<iostream>
+	"entrenamiento.h"
+	"ArchivosEntrenamiento.h"
+	"../usuarios/ArchivosUsuarios.h"
+	"../estructura.h"
+	"../validaciones.h"
+	"../InterfazGrafica/ui.h"
+
+1606971705 source:c:\users\usuario\desktop\laratp\interfazgrafica\ui.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1593548419 c:\users\usuario\desktop\laratp\interfazgrafica\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1606891675 source:c:\users\usuario\desktop\laratp\menu.cpp
+	<iostream>
+	"InterfazGrafica/ui.h"
+	"menu.h"
+	"usuarios/usuario.h"
+	"entrenamientos/entrenamiento.h"
+	"configuraciones/configuracion.h"
+	"reporte/reportes.h"
+
+1606420300 c:\users\usuario\desktop\laratp\menu.h
+
+1606428164 c:\users\usuario\desktop\laratp\usuarios\usuario.h
+
+1606420407 c:\users\usuario\desktop\laratp\reporte\reportes.h
+
+1606892134 source:c:\users\usuario\desktop\laratp\reporte\archivosreportes.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"ArchivosReportes.h"
+	"reportes.h"
+	"../estructura.h"
+	"../validaciones.h"
+	"../InterfazGrafica/ui.h"
+	"../entrenamientos/ArchivosEntrenamiento.h"
+	"../usuarios/ArchivosUsuarios.h"
+	"../configuraciones/ArchivosConfiguracion.h"
+	"../entrenamientos/entrenamiento.h"
+	"../usuarios/usuario.h"
+
+1606891916 c:\users\usuario\desktop\laratp\reporte\archivosreportes.h
+
+1606970102 source:c:\users\usuario\desktop\laratp\reporte\reportes.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"reportes.h"
+	"ArchivosReportes.h"
+	"../estructura.h"
+	"../validaciones.h"
+	"../InterfazGrafica/ui.h"
+	"../entrenamientos/ArchivosEntrenamiento.h"
+	"../usuarios/ArchivosUsuarios.h"
+	"../configuraciones/ArchivosConfiguracion.h"
+	"../entrenamientos/entrenamiento.h"
+	"../usuarios/usuario.h"
+
+1606884487 source:c:\users\usuario\desktop\laratp\usuarios\archivosusuarios.cpp
+	<iostream>
+	"../estructura.h"
+	"ArchivosUsuarios.h"
+	"usuario.h"
+
+1606947157 source:c:\users\usuario\desktop\laratp\usuarios\usuario.cpp
+	<iostream>
+	<cstring>
+	"usuario.h"
+	"ArchivosUsuarios.h"
+	"../estructura.h"
+	"../validaciones.h"
+	"../InterfazGrafica/ui.h"
+
+1606948010 source:c:\users\usuario\desktop\laratp\validaciones.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<ctime>
+	<string.h>
+	"validaciones.h"
+	"usuarios/ArchivosUsuarios.h"
+	"estructura.h"
+
+1606971705 source:c:\users\usuario\desktop\laratp\main.cpp
+	<iostream>
+	"InterfazGrafica/ui.h"
+	"menu.h"
+
