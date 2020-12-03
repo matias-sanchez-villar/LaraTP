@@ -54,7 +54,36 @@ void reporte1(){
 void reporte2(){
     title("REPORTE 2", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
 
-
+    usuario *uno;
+    entrenamiento dos;
+    int cant=CantidadUsuarios(), pos=0, *minutos;
+    uno=(usuario *)malloc(cant*sizeof(usuario));
+    if(uno==NULL){
+        return;
+    }
+    minutos=(int *)malloc(cant*sizeof(int));
+    if(minutos==NULL){
+        return;
+    }
+    for(int x=0;x<cant;x++){
+        LeerUsuario(uno[x], x);
+        minutos[x]=0;
+    }
+    for(int x=0;x<cant;x++){
+        while(LeerEntrenamiento(dos, pos++)){
+            if(uno[x].id==dos.idUsuario){
+                minutos[x]+=dos.tiempo;
+            }
+        }
+        pos=0;
+    }
+    for(int x=0;x<cant;x++){
+        if(minutos[x]>120){
+            MostrarUsuario(uno[x]);
+        }
+    }
+    free(uno);
+    free(minutos);
 
     system("pause");
     system("cls");
