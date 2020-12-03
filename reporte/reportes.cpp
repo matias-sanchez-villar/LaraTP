@@ -36,6 +36,7 @@ void reporte1(){
             estado=true;
         }
     }
+    ///comprobación
     if(estado==false){
         system("cls");
         msj("NO EXISTE USUARIO CON ESAS CONDICIONES", 15, 3, 1, 1);
@@ -57,6 +58,7 @@ void reporte2(){
     usuario *uno;
     entrenamiento dos;
     int cant=CantidadUsuarios(), pos=0, *minutos;
+    ///memoria dinamica
     uno=(usuario *)malloc(cant*sizeof(usuario));
     if(uno==NULL){
         return;
@@ -65,6 +67,7 @@ void reporte2(){
     if(minutos==NULL){
         return;
     }
+    ///cargar vectores
     for(int x=0;x<cant;x++){
         LeerUsuario(uno[x], x);
         minutos[x]=0;
@@ -77,13 +80,15 @@ void reporte2(){
         }
         pos=0;
     }
+    ///buscar la cantidad
     int cantidad=0;
     for(int x=0;x<cant;x++){
         if(minutos[x]>120){
             cantidad++;
         }
     }
-    cout<<endl<<endl<<"cantidad de usuarios distintos que hayan entrenado más de 250 minutos: "<<cantidad<<endl;
+    ///mostrar
+    cout<<endl<<endl<<"cantidad de usuarios distintos que hayan entrenado más de 250 minutos: "<<cantidad<<endl<<endl;
     free(uno);
     free(minutos);
 
