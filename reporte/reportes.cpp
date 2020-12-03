@@ -87,7 +87,7 @@ void reporte2(){
     ///buscar la cantidad
     int cantidad=0;
     for(int x=0;x<cant;x++){
-        if(minutos[x]>120){
+        if(minutos[x]>250){
             cantidad++;
         }
     }
