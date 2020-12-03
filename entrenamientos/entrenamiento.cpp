@@ -166,7 +166,7 @@ void ListarTodosEntrenamientos(){
 }
 
 void MostrarEntramiento(struct entrenamiento uno){
-    cout<<"----------------------------------------"<<endl;
+    cout<<endl<<"----------------------------------------"<<endl;
     cout<<"ID de entrenamiento "<<uno.id<<endl;
     cout<<"ID de usuario: "<<uno.idUsuario<<endl;
     cout<<"fecha de entrenamiento "<<uno.entrenamiento.dia<<"/"<<uno.entrenamiento.mes<<"/"<<uno.entrenamiento.anio<<endl;

@@ -50,7 +50,7 @@
 
 1606428164 c:\users\usuario\downloads\lara_tp\usuarios\usuario.h
 
-1606947812 source:c:\users\usuario\downloads\lara_tp\entrenamientos\entrenamiento.cpp
+1606967961 source:c:\users\usuario\downloads\lara_tp\entrenamientos\entrenamiento.cpp
 	<iostream>
 	"entrenamiento.h"
 	"ArchivosEntrenamiento.h"
@@ -63,7 +63,7 @@
 
 1606420407 c:\users\usuario\downloads\lara_tp\reporte\reportes.h
 
-1606946710 source:c:\users\usuario\downloads\lara_tp\reporte\reportes.cpp
+1606969702 source:c:\users\usuario\downloads\lara_tp\reporte\reportes.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -79,7 +79,7 @@
 	"../entrenamientos/entrenamiento.h"
 	"../usuarios/usuario.h"
 
-1606891630 source:c:\users\usuario\downloads\lara_tp\configuraciones\configuracion.cpp
+1606967300 source:c:\users\usuario\downloads\lara_tp\configuraciones\configuracion.cpp
 	<iostream>
 	<cstdio>
 	"configuracion.h"

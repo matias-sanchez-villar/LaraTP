@@ -16,8 +16,16 @@ using namespace std;
 
 void reporte1(){
     title("REPORTE 1", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+
+
+    system("pause");
+    system("cls");
 }
 
 void reporte2(){
     title("REPORTE 2", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+
+
+    system("pause");
+    system("cls");
 }
