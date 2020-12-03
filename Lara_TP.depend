@@ -190,7 +190,7 @@
 
 1606420383 c:\users\usuario\desktop\laratp\entrenamientos\entrenamiento.h
 
-1606967961 source:c:\users\usuario\desktop\laratp\entrenamientos\entrenamiento.cpp
+1607023479 source:c:\users\usuario\desktop\laratp\entrenamientos\entrenamiento.cpp
 	<iostream>
 	"entrenamiento.h"
 	"ArchivosEntrenamiento.h"
@@ -276,7 +276,7 @@
 	"ArchivosUsuarios.h"
 	"usuario.h"
 
-1606947157 source:c:\users\usuario\desktop\laratp\usuarios\usuario.cpp
+1607023399 source:c:\users\usuario\desktop\laratp\usuarios\usuario.cpp
 	<iostream>
 	<cstring>
 	"usuario.h"
@@ -296,7 +296,7 @@
 	"usuarios/ArchivosUsuarios.h"
 	"estructura.h"
 
-1606971705 source:c:\users\usuario\desktop\laratp\main.cpp
+1606977262 source:c:\users\usuario\desktop\laratp\main.cpp
 	<iostream>
 	"InterfazGrafica/ui.h"
 	"menu.h"

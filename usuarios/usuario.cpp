@@ -187,11 +187,17 @@ void ListarTodosUsuarios(){
     title("MOSTRAR TODOS LOS USUARIO", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
     usuario uno;
     int pos=0;
+    bool estado=false;
     cout<<endl;
     while(LeerUsuario(uno, pos++)){
         if(uno.estado==true){
             MostrarUsuario(uno);
+            estado=true;
         }
+    }
+    if(estado==false){
+        system("cls");
+        msj("NO EXISTEN USUARIOS", 15, 3, 1, 1);
     }
     system("pause");
     system("cls");
