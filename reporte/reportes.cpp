@@ -3,8 +3,8 @@ using namespace std;
 #include <cstdlib>
 #include <cstdio>
 #include <cstring>
-#include "ArchivosReportes.h"
 #include "reportes.h"
+#include "ArchivosReportes.h"
 #include "../estructura.h"
 #include "../validaciones.h"
 #include "../InterfazGrafica/ui.h"
@@ -14,6 +14,10 @@ using namespace std;
 #include "../entrenamientos/entrenamiento.h"
 #include "../usuarios/usuario.h"
 
+void reporte1(){
+    title("REPORTE 1", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+}
 
-
-
+void reporte2(){
+    title("REPORTE 2", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+}

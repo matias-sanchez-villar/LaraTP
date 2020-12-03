@@ -1,9 +1,5 @@
 #include <iostream>
 using namespace std;
-#include <cstdlib>
-#include <cstdio>
-#include <cstring>
-#include <stdlib.h>
 #include "InterfazGrafica/ui.h"
 #include "menu.h"
 
@@ -11,9 +7,9 @@ int main(){
     setlocale(LC_ALL, "Spanish");
     short opcion;
     do{
-        title("MENÚ", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENU", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         system("cls");
-        title("MENÚ", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENU", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1_ USUARIOS";
         cout<<endl<<"2_ ENTRENAMIENTOS";

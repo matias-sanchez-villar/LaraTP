@@ -1,0 +1,152 @@
+# depslib dependency file v1.0
+1606891675 source:c:\users\usuario\downloads\lara_tp\menu.cpp
+	<iostream>
+	"InterfazGrafica/ui.h"
+	"menu.h"
+	"usuarios/usuario.h"
+	"entrenamientos/entrenamiento.h"
+	"configuraciones/configuracion.h"
+	"reporte/reportes.h"
+
+1606420300 c:\users\usuario\downloads\lara_tp\menu.h
+
+1606419576 source:c:\users\usuario\downloads\lara_tp\interfazgrafica\ui.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1606419576 c:\users\usuario\downloads\lara_tp\interfazgrafica\ui.h
+
+1593548419 c:\users\usuario\downloads\lara_tp\interfazgrafica\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1606891675 source:c:\users\usuario\downloads\lara_tp\main.cpp
+	<iostream>
+	"InterfazGrafica/ui.h"
+	"menu.h"
+
+1606947157 source:c:\users\usuario\downloads\lara_tp\usuarios\usuario.cpp
+	<iostream>
+	<cstring>
+	"usuario.h"
+	"ArchivosUsuarios.h"
+	"../estructura.h"
+	"../validaciones.h"
+	"../InterfazGrafica/ui.h"
+
+1606428164 c:\users\usuario\downloads\lara_tp\usuarios\usuario.h
+
+1606947812 source:c:\users\usuario\downloads\lara_tp\entrenamientos\entrenamiento.cpp
+	<iostream>
+	"entrenamiento.h"
+	"ArchivosEntrenamiento.h"
+	"../usuarios/ArchivosUsuarios.h"
+	"../estructura.h"
+	"../validaciones.h"
+	"../InterfazGrafica/ui.h"
+
+1606420383 c:\users\usuario\downloads\lara_tp\entrenamientos\entrenamiento.h
+
+1606420407 c:\users\usuario\downloads\lara_tp\reporte\reportes.h
+
+1606946710 source:c:\users\usuario\downloads\lara_tp\reporte\reportes.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"reportes.h"
+	"ArchivosReportes.h"
+	"../estructura.h"
+	"../validaciones.h"
+	"../InterfazGrafica/ui.h"
+	"../entrenamientos/ArchivosEntrenamiento.h"
+	"../usuarios/ArchivosUsuarios.h"
+	"../configuraciones/ArchivosConfiguracion.h"
+	"../entrenamientos/entrenamiento.h"
+	"../usuarios/usuario.h"
+
+1606891630 source:c:\users\usuario\downloads\lara_tp\configuraciones\configuracion.cpp
+	<iostream>
+	<cstdio>
+	"configuracion.h"
+	"ArchivosConfiguracion.h"
+	"../estructura.h"
+	"../usuarios/ArchivosUsuarios.h"
+	"../entrenamientos/ArchivosEntrenamiento.h"
+	"../validaciones.h"
+	"../InterfazGrafica/ui.h"
+
+1606420431 c:\users\usuario\downloads\lara_tp\configuraciones\configuracion.h
+
+1606427150 c:\users\usuario\downloads\lara_tp\estructura.h
+
+1606884487 source:c:\users\usuario\downloads\lara_tp\usuarios\archivosusuarios.cpp
+	<iostream>
+	"../estructura.h"
+	"ArchivosUsuarios.h"
+	"usuario.h"
+
+1606884487 c:\users\usuario\downloads\lara_tp\usuarios\archivosusuarios.h
+
+1606948010 source:c:\users\usuario\downloads\lara_tp\validaciones.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<ctime>
+	<string.h>
+	"validaciones.h"
+	"usuarios/ArchivosUsuarios.h"
+	"estructura.h"
+
+1606947812 c:\users\usuario\downloads\lara_tp\validaciones.h
+
+1606881130 source:c:\users\usuario\downloads\lara_tp\entrenamientos\archivosentrenamiento.cpp
+	<iostream>
+	"ArchivosEntrenamiento.h"
+	"../estructura.h"
+	"entrenamiento.h"
+	"../usuarios/ArchivosUsuarios.h"
+
+1606887363 c:\users\usuario\downloads\lara_tp\entrenamientos\archivosentrenamiento.h
+
+1606891783 source:c:\users\usuario\downloads\lara_tp\configuraciones\archivosconfiguracion.cpp
+	<iostream>
+	"ArchivosConfiguracion.h"
+	"configuracion.h"
+	"../estructura.h"
+
+1606891608 c:\users\usuario\downloads\lara_tp\configuraciones\archivosconfiguracion.h
+
+1606891916 c:\users\usuario\downloads\lara_tp\reporte\archivosreportes.h
+
+1606892134 source:c:\users\usuario\downloads\lara_tp\reporte\archivosreportes.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"ArchivosReportes.h"
+	"reportes.h"
+	"../estructura.h"
+	"../validaciones.h"
+	"../InterfazGrafica/ui.h"
+	"../entrenamientos/ArchivosEntrenamiento.h"
+	"../usuarios/ArchivosUsuarios.h"
+	"../configuraciones/ArchivosConfiguracion.h"
+	"../entrenamientos/entrenamiento.h"
+	"../usuarios/usuario.h"
+

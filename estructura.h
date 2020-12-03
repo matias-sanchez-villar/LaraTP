@@ -5,7 +5,7 @@ struct fecha{
     int dia, mes, anio;
 };
 
-struct participante{
+struct usuario{
     bool apto, estado;
     int id;
     float altura, peso;

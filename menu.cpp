@@ -1,20 +1,16 @@
 #include <iostream>
 using namespace std;
-#include <cstdlib>
-#include <cstdio>
-#include <cstring>
-#include <stdlib.h>
-#include "menu.h"
 #include "InterfazGrafica/ui.h"
-#include "usuario/usuario.h"
-#include "entrenamiento/entrenamiento.h"
-#include "reporte/reporte.h"
-#include "configuraciones/confuguracion.h"
+#include "menu.h"
+#include "usuarios/usuario.h"
+#include "entrenamientos/entrenamiento.h"
+#include "configuraciones/configuracion.h"
+#include "reporte/reportes.h"
 
 void usuario(){
     short opcion;
     do{
-        title("MENÚ USUARIOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENU USUARIOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) NUEVO USUARIO";
         cout<<endl<<"2) MODIFICAR USUARIO";
@@ -55,7 +51,7 @@ void usuario(){
 void entrenamientos(){
     short opcion;
     do{
-        title("MENÚ ENTRENAMIENTOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENU ENTRENAMIENTOS", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) NUEVO ENTRENAMIENTO";
         cout<<endl<<"2) MODIFICAR ENTRENAMIENTO";
@@ -95,7 +91,7 @@ void entrenamientos(){
 void reportes(){
     short opcion;
     do{
-        title("MENÚ REPORTE", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENU REPORTE", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) REPORTE 1";
         cout<<endl<<"2) REPORTE 2";
@@ -124,7 +120,7 @@ void reportes(){
 void configuracion(){
     short opcion;
     do{
-        title("MENÚ CONFIGURACIÓN", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+        title("MENU CONFIGURACIÓN", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
         cout<<endl<<"---------------------------";
         cout<<endl<<"1) REALIZAR COPIA DE SEGURIDAD";
         cout<<endl<<"2) RESTAURAR COPIA DE SEGURIDAD";

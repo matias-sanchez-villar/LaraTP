@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Lara_TP" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Lara_TP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Lara_TP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="InterfazGrafica/ui.cpp" />
+		<Unit filename="InterfazGrafica/ui.h" />
+		<Unit filename="configuraciones/ArchivosConfiguracion.cpp" />
+		<Unit filename="configuraciones/ArchivosConfiguracion.h" />
+		<Unit filename="configuraciones/configuracion.cpp" />
+		<Unit filename="configuraciones/configuracion.h" />
+		<Unit filename="entrenamientos/ArchivosEntrenamiento.cpp" />
+		<Unit filename="entrenamientos/ArchivosEntrenamiento.h" />
+		<Unit filename="entrenamientos/entrenamiento.cpp" />
+		<Unit filename="entrenamientos/entrenamiento.h" />
+		<Unit filename="estructura.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="menu.cpp" />
+		<Unit filename="menu.h" />
+		<Unit filename="reporte/ArchivosReportes.cpp" />
+		<Unit filename="reporte/ArchivosReportes.h" />
+		<Unit filename="reporte/reportes.cpp" />
+		<Unit filename="reporte/reportes.h" />
+		<Unit filename="usuarios/ArchivosUsuarios.cpp" />
+		<Unit filename="usuarios/ArchivosUsuarios.h" />
+		<Unit filename="usuarios/usuario.cpp" />
+		<Unit filename="usuarios/usuario.h" />
+		<Unit filename="validaciones.cpp" />
+		<Unit filename="validaciones.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
