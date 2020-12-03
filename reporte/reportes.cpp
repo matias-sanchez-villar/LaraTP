@@ -77,11 +77,13 @@ void reporte2(){
         }
         pos=0;
     }
+    int cantidad=0;
     for(int x=0;x<cant;x++){
         if(minutos[x]>120){
-            MostrarUsuario(uno[x]);
+            cantidad++;
         }
     }
+    cout<<endl<<endl<<"cantidad de usuarios distintos que hayan entrenado más de 250 minutos: "<<cantidad<<endl;
     free(uno);
     free(minutos);
 
