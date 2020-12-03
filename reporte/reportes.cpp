@@ -14,6 +14,10 @@ using namespace std;
 #include "../entrenamientos/entrenamiento.h"
 #include "../usuarios/usuario.h"
 
+/*
+
+*/
+
 void reporte1(){
     title("REPORTE 1", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
 
@@ -22,8 +26,13 @@ void reporte1(){
     system("cls");
 }
 
+/*
+
+*/
+
 void reporte2(){
     title("REPORTE 2", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);
+
 
 
     system("pause");
