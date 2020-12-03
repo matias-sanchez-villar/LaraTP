@@ -31,7 +31,7 @@ void reporte1(){
     cout<<"Ingrese peso: ";
     cin>>peso;
     while(LeerUsuario(uno, pos++)){
-        if(altura<uno.altura && peso<uno.peso){
+        if(altura<uno.altura || peso<uno.peso){
             MostrarUsuario(uno);
             estado=true;
         }
@@ -58,7 +58,9 @@ void reporte2(){
     usuario *uno;
     entrenamiento dos;
     int cant=CantidadUsuarios(), pos=0, *minutos;
+
     ///memoria dinamica
+
     uno=(usuario *)malloc(cant*sizeof(usuario));
     if(uno==NULL){
         return;
@@ -67,6 +69,7 @@ void reporte2(){
     if(minutos==NULL){
         return;
     }
+
     ///cargar vectores
     for(int x=0;x<cant;x++){
         LeerUsuario(uno[x], x);
@@ -80,6 +83,7 @@ void reporte2(){
         }
         pos=0;
     }
+
     ///buscar la cantidad
     int cantidad=0;
     for(int x=0;x<cant;x++){
@@ -87,6 +91,7 @@ void reporte2(){
             cantidad++;
         }
     }
+
     ///mostrar
     cout<<endl<<endl<<"cantidad de usuarios distintos que hayan entrenado más de 250 minutos: "<<cantidad<<endl<<endl;
     free(uno);
