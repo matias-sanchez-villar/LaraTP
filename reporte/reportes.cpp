@@ -84,7 +84,7 @@ void reporte2(){
         pos=0;
     }
 
-    ///buscar la cantidad
+    ///buscar la cantidad y mostrar usuario
     int cantidad=0;
     for(int x=0;x<cant;x++){
         if(minutos[x]>250){
