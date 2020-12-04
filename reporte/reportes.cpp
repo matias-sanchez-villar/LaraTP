@@ -88,6 +88,7 @@ void reporte2(){
     int cantidad=0;
     for(int x=0;x<cant;x++){
         if(minutos[x]>250){
+            MostrarUsuario(uno[x]);
             cantidad++;
         }
     }
