@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
+#include <cstdlib>
 #include <cstdio>
+#include <cstring>
 #include "configuracion.h"
 #include "ArchivosConfiguracion.h"
 #include "../estructura.h"

@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
 #include "InterfazGrafica/ui.h"
 #include "menu.h"
 #include "usuarios/usuario.h"

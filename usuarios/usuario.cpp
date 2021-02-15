@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 #include <cstring>
+#include <cstdlib>
+#include <cstdio>
 #include "usuario.h"
 #include "ArchivosUsuarios.h"
 #include "../estructura.h"
