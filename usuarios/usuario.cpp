@@ -26,14 +26,14 @@ void NuevoUsuario(){
         }
     cout<<"Ingrese el Nombre: ";
     cin.ignore();
-    cin.getline(uno.nombre, 30, '\n');
+    cin.getline(uno.nombre, 50, '\n');
         while(uno.nombre[0]==' '){
             cout<<endl<<"Nombre incorrecta, reingrese el Nombre"<<endl<<endl;
             cout<<">> Ingrese el Nombre: ";
             cin.getline(uno.nombre, 30, '\n');
         }
     cout<<"Ingrese el Apellido: ";
-    cin.getline(uno.apellido, 30, '\n');
+    cin.getline(uno.apellido, 50, '\n');
         while(uno.apellido[0]==' '){
             cout<<endl<<"Apellido incorrecta, reingrese el Apellido"<<endl<<endl;
             cout<<">> Ingrese el Apellido: ";
@@ -237,13 +237,13 @@ void EliminarUsuario(){
 
 void MostrarUsuario(usuario uno){
     cout<<endl<<"----------------------------------------------"<<endl;
-    cout<<"ID "<<uno.id<<endl;
-    cout<<"Nombre "<<uno.nombre<<endl;
-    cout<<"Apelldio "<<uno.apellido<<endl;
-    cout<<"Fecha de nacimiento "<<uno.nacimiento.dia<<"/"<<uno.nacimiento.mes<<"/"<<uno.nacimiento.anio<<endl;
-    cout<<"Altura "<<uno.altura<<endl;
-    cout<<"Peso "<<uno.peso<<endl;
-    cout<<"Perfil de actividad "<<uno.perfil<<endl;
-    cout<<"Apto medico "<<uno.apto<<endl;
+    cout<<"ID                    "<<uno.id<<endl;
+    cout<<"Nombre                "<<uno.nombre<<endl;
+    cout<<"Apelldio              "<<uno.apellido<<endl;
+    cout<<"Fecha de nacimiento   "<<uno.nacimiento.dia<<"/"<<uno.nacimiento.mes<<"/"<<uno.nacimiento.anio<<endl;
+    cout<<"Altura                "<<uno.altura<<endl;
+    cout<<"Peso                  "<<uno.peso<<endl;
+    cout<<"Perfil de actividad   "<<uno.perfil<<endl;
+    cout<<"Apto medico           "<<uno.apto<<endl;
     cout<<"----------------------------------------------"<<endl<<endl;
 }

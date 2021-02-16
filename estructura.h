@@ -9,7 +9,7 @@ struct usuario{
     bool apto, estado;
     int id;
     float altura, peso;
-    char nombre[30], apellido[30], perfil;
+    char nombre[50], apellido[50], perfil;
     fecha nacimiento;
 };
 

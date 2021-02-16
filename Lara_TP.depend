@@ -150,8 +150,11 @@
 	"../entrenamientos/entrenamiento.h"
 	"../usuarios/usuario.h"
 
-1606891783 source:c:\users\usuario\desktop\laratp\configuraciones\archivosconfiguracion.cpp
+1613433422 source:c:\users\usuario\desktop\laratp\configuraciones\archivosconfiguracion.cpp
 	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
 	"ArchivosConfiguracion.h"
 	"configuracion.h"
 	"../estructura.h"
@@ -160,7 +163,7 @@
 
 1606420431 c:\users\usuario\desktop\laratp\configuraciones\configuracion.h
 
-1606427150 c:\users\usuario\desktop\laratp\estructura.h
+1613433655 c:\users\usuario\desktop\laratp\estructura.h
 
 1613433414 source:c:\users\usuario\desktop\laratp\configuraciones\configuracion.cpp
 	<iostream>
@@ -290,7 +293,7 @@
 	"ArchivosUsuarios.h"
 	"usuario.h"
 
-1613433219 source:c:\users\usuario\desktop\laratp\usuarios\usuario.cpp
+1613433712 source:c:\users\usuario\desktop\laratp\usuarios\usuario.cpp
 	<iostream>
 	<cstring>
 	<cstdlib>
