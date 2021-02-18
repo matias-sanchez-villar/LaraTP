@@ -268,7 +268,7 @@
 
 1606891916 c:\users\usuario\desktop\laratp\reporte\archivosreportes.h
 
-1613602949 source:c:\users\usuario\desktop\laratp\reporte\reportes.cpp
+1613689971 source:c:\users\usuario\desktop\laratp\reporte\reportes.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -283,6 +283,7 @@
 	"../configuraciones/ArchivosConfiguracion.h"
 	"../entrenamientos/entrenamiento.h"
 	"../usuarios/usuario.h"
+	"../pagos.h"
 
 1613433219 source:c:\users\usuario\desktop\laratp\usuarios\archivosusuarios.cpp
 	<iostream>
@@ -322,4 +323,6 @@
 	<cstring>
 	"InterfazGrafica/ui.h"
 	"menu.h"
+
+1613690097 c:\users\usuario\desktop\laratp\pagos.h
 
