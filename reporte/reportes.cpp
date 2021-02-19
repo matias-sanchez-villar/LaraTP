@@ -21,7 +21,7 @@ using namespace std;
 */
 
 void reporte1(){
-    title("REPORTE 1", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);cout<<endl;
+    title("REPORTE 1", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);cout<<endl<<endl;
 
     Pago uno;
     float Promedio[3]={};
@@ -60,11 +60,39 @@ void reporte1(){
     con Tarjeta pero sí con Efectivo.
 */
 
+bool MedioPago(int);
+
 void reporte2(){
-    title("REPORTE 2", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);cout<<endl;
+    title("REPORTE 2", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);cout<<endl<<endl;
 
-
+    usuario uno;
+    bool estado=true;
+    cout<<"Usuarios no abonaron en efectivo"<<endl<<endl;
+    cout<<"--------------------------------"<<endl;
+    for(int x=0;x<CantidadUsuarios();x++){
+        LeerUsuario(uno, x);
+        if(MedioPago(uno.id)){
+            cout<<"Nombre: "<<uno.nombre<<endl;
+            cout<<"Apellido: "<<uno.apellido<<endl;
+            cout<<"--------------------------------"<<endl<<endl;
+        }
+    }
 
     system("pause");
     system("cls");
+}
+
+bool MedioPago(int id){
+    Pago uno;
+    bool Estado=false;
+    for(int x=0;x<CantidadPagos();x++){
+        uno=leer_pago(x);
+        if(uno.idusuario==id){
+            if(uno.formapago=='t' || uno.formapago=='T'){
+                return false;
+            }
+            Estado=true;
+        }
+    }
+return Estado;
 }
