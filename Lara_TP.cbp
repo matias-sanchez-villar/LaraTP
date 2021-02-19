@@ -46,6 +46,7 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="menu.cpp" />
 		<Unit filename="menu.h" />
+		<Unit filename="pagos.h" />
 		<Unit filename="reporte/ArchivosReportes.cpp" />
 		<Unit filename="reporte/ArchivosReportes.h" />
 		<Unit filename="reporte/reportes.cpp" />
