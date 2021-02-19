@@ -1,6 +1,12 @@
 #ifndef PAGOS_H_INCLUDED
 #define PAGOS_H_INCLUDED
 
+#include <iostream>
+using namespace std;
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
+
 struct Pago{
     int idusuario;
     int dia, mes, anio;

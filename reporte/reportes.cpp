@@ -47,9 +47,9 @@ void reporte1(){
         }
     }
 
-    cout<<"El importe en 'E' efectivo es: "<<Promedio[0]/Cantidad[0]<<endl;
-    cout<<"El importe en 'T' tarjeta de credito es: "<<Promedio[1]/Cantidad[1]<<endl;
-    cout<<"El importe en 'B' billetera electonica es: "<<Promedio[2]/Cantidad[2]<<endl<<endl;
+    cout<<"El importe promedio en 'E' efectivo es: "<<Promedio[0]/Cantidad[0]<<endl<<endl;
+    cout<<"El importe promedio en 'T' tarjeta de credito es: "<<Promedio[1]/Cantidad[1]<<endl<<endl;
+    cout<<"El importe promedio en 'B' billetera electonica es: "<<Promedio[2]/Cantidad[2]<<endl<<endl;
 
     system("pause");
     system("cls");
@@ -66,7 +66,6 @@ void reporte2(){
     title("REPORTE 2", APP_TITLEFORECOLOR, APP_TITLEBACKCOLOR);cout<<endl<<endl;
 
     usuario uno;
-    bool estado=true;
     cout<<"Usuarios no abonaron en efectivo"<<endl<<endl;
     cout<<"--------------------------------"<<endl;
     for(int x=0;x<CantidadUsuarios();x++){

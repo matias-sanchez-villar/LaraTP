@@ -268,7 +268,7 @@
 
 1613692605 c:\users\usuario\desktop\laratp\reporte\archivosreportes.h
 
-1613692521 source:c:\users\usuario\desktop\laratp\reporte\reportes.cpp
+1613693734 source:c:\users\usuario\desktop\laratp\reporte\reportes.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -324,5 +324,9 @@
 	"InterfazGrafica/ui.h"
 	"menu.h"
 
-1613691199 c:\users\usuario\desktop\laratp\pagos.h
+1613693811 c:\users\usuario\desktop\laratp\pagos.h
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
 
